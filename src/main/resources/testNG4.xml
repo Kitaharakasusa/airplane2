@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Custom suite">
+
+    <!-- name 必须Parameters注解接收名一致，value就是为参数的值-->
+    <parameter name="linetype" value="out"/>
+    <parameter name="start" value="C"/>
+    <parameter name="end" value="AME"/>
+    <parameter name="jicang" value="T"/>
+    <parameter name="cusclass" value="A"/>
+    <parameter name="vip" value="W"/>
+    <parameter name="luggage" value="20/20/20/20"/>
+    <parameter name="ticktvalue" value="1000"/>
+    <parameter name="res" value="true"/>
+    <test verbose="1" name="Selenium_Demo" annotations="JDK">
+        <classes>
+            <!-- 设置需要执行的class路径名-->
+            <class name="hyg.controller.TestDemo4"/>
+        </classes>
+    </test>
+</suite>
