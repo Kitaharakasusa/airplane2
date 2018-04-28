@@ -15,7 +15,7 @@
     <test verbose="1" name="Selenium_Demo" annotations="JDK">
         <classes>
             <!-- 设置需要执行的class路径名-->
-            <class name="hyg.controller.TestDemo4"/>
+            <class name="hyg.test.TestDemo4"/>
         </classes>
     </test>
 </suite>

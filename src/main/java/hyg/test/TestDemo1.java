@@ -1,4 +1,4 @@
-package hyg.controller;
+package hyg.test;
 
 import hyg.model.Check;
 import hyg.model.CusTicker;

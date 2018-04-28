@@ -1,4 +1,4 @@
-package hyg.controller;
+package hyg.test;
 
 import hyg.model.Check;
 import hyg.model.CusTicker;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Create by Kitahara on 2018/4/29 0:25
  * email kitaharakasusa@gmail.com
  */
-public class TestDemo4 {
+public class TestDemo3 {
     //免费测试
     @Parameters({"linetype","start","end","jicang","cusclass","vip","luggage","ticktvalue","res"})
     @Test
