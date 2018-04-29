@@ -1,3 +1,4 @@
+package hyg.model
 //package hyg.model
 //
 //
