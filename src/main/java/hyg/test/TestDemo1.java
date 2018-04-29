@@ -16,10 +16,11 @@ public class TestDemo1 {
     @Parameters({"linetype","start","end","jicang","cusclass","vip","luggage","ticktvalue","res"})
     @Test
     public void testcase1(String linetype,String start,String end,String jicang,String cusclass,
-                          String vip,String luggage,String ticktvalue,int res)
+                          String vip,String luggage,String ticktvalue,String res)
     {
         int relres=PutInCheck.incheck(linetype,start,end,jicang,cusclass,vip,luggage,ticktvalue).size();
-        Assert.assertEquals(relres,res);
+        int toint=Integer.valueOf(res);
+        Assert.assertEquals(relres,toint);
         System.out.println("testcase1");
 
     }

@@ -12,15 +12,18 @@ import org.testng.annotations.Test;
  * email kitaharakasusa@gmail.com
  */
 public class TestDemo4 {
-    //免费测试
+    //不符合规定的行李测试
     @Parameters({"linetype","start","end","jicang","cusclass","vip","luggage","ticktvalue","res"})
     @Test
-    public void testcase3(String linetype,String start,String end,String jicang,String cusclass,
-                          String vip,String luggage,String ticktvalue,boolean res)
+    public void testcase4(String linetype,String start,String end,String jicang,String cusclass,
+                          String vip,String luggage,String ticktvalue,String res)
     {
-        CusTicker custicker= PutInCheck.Getticketer(linetype,start,end,jicang,cusclass,vip,luggage,ticktvalue);
+        CusTicker custicker=PutInCheck.Getticketer(linetype,start,end,jicang,cusclass,vip,luggage,ticktvalue);
         Check check=new Check(custicker);
-        boolean realres=check.freecheck();
-        Assert.assertEquals(realres,res);
+        check.checkover();
+        float realres=check.getFinalcost();
+        float tofloat=Float.valueOf(res);
+        Assert.assertEquals(realres,tofloat);
     }
+
 }

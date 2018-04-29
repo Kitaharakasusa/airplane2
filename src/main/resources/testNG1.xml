@@ -3,15 +3,15 @@
 <suite name="Custom suite">
 
 <!-- name 必须Parameters注解接收名一致，value就是为参数的值-->
-<parameter name="linetype" value="out"/>
-<parameter name="start" value="C"/>
-<parameter name="end" value="AME"/>
-<parameter name="jicang" value="T"/>
-<parameter name="cusclass" value="A"/>
-<parameter name="vip" value="W"/>
-<parameter name="luggage" value="20/20/20/20"/>
-<parameter name="ticktvalue" value="1000"/>
-<parameter name="res" value="true"/>
+<parameter name="linetype" value="${linetype}"/>
+<parameter name="start" value="${start}"/>
+<parameter name="end" value="${end}"/>
+<parameter name="jicang" value="${jicang}"/>
+<parameter name="cusclass" value="${cusclass}"/>
+<parameter name="vip" value="${vip}"/>
+<parameter name="luggage" value="${luggage}"/>
+<parameter name="ticktvalue" value="${ticktvalue}"/>
+<parameter name="res" value="t${res1}"/>
 <test verbose="1" name="Selenium_Demo" annotations="JDK">
     <classes>
         <!-- 设置需要执行的class路径名-->

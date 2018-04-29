@@ -99,7 +99,7 @@
         <configuration>
           <testFailureIgnore>true</testFailureIgnore>
           <suiteXmlFiles>
-            <file>resources/testNG.xml</file>
+            <file>${Runtest}</file>
           </suiteXmlFiles>
           <!--<workingDirectory>target/</workingDirectory>-->
         </configuration>
