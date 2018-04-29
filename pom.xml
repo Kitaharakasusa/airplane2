@@ -11,12 +11,12 @@
   </properties>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <!--<dependency>-->
-      <!--<groupId>junit</groupId>-->
-      <!--<artifactId>junit</artifactId>-->
-      <!--<version>3.8.1</version>-->
-      <!--<scope>test</scope>-->
-    <!--</dependency>-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
@@ -84,11 +84,9 @@
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
-          <compilerArgs>
-            <arg>-Xlint:unchecked</arg>
-            <arg>-Xlint:deprecation </arg>
+          <encoding>UTF-8</encoding>
             <!--<arg>endorseddirs=${endorsed.dir}</arg>-->
-          </compilerArgs>
+
         </configuration>
       </plugin>
       <!--添加插件 关联testNg.xml-->
@@ -99,7 +97,8 @@
         <configuration>
           <testFailureIgnore>true</testFailureIgnore>
           <suiteXmlFiles>
-            <file>${Runtest}</file>
+            <suiteXmlFile>${Runtest}</suiteXmlFile>
+            <!--<Sufile>${Runtest}</Sufile>-->
           </suiteXmlFiles>
           <!--<workingDirectory>target/</workingDirectory>-->
         </configuration>
