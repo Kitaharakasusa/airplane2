@@ -1,0 +1,13 @@
+linetype,start,end,jicang,cusclass,vip,luggage,ticktvalue,res,text
+out,C,AME,T,A,W,20/20/20/20 20/20/20/20 20/20/20/20,1000,true,区域一公务舱无卡全符合
+out,C,AME,J,A,W,20/20/20/20 20/20/20/20,1000,true,经济舱全符合
+out,C,AME,J,A,W,20/20/20/20 20/20/20/20 20/20/20/20,1000,true,超一件试试
+out,C,AME,T,A,J,20/20/20/20 20/20/20/20 20/20/20/20 20/20/20/20,1000,true,金卡算上加一件
+out,C,AME,T,A,J,20/20/20/20 20/20/20/20 20/20/20/20,1000,true,xx
+in,C,C,T,A,J,60/20/20/20,1000,false,国内无法托运超重
+in,C,C,T,A,J,30/20/20/110,1000,false,国内无法托运 超尺寸
+out,C,AME,T,A,J,46/20/20/20,1000,false,涉及美国航线 超重
+out,C,AME,T,A,J,45/20/20/20,1000,true,涉及美国航线 不超重
+out,C,J,T,A,J,33/20/20/20,1000,false,不涉及美国航线超重
+out,C,J,T,A,J,32/20/20/20,1000,false,不涉及美国航线超重
+out,C,AME,T,A,W,40/20/20/20,1000,true,xx
