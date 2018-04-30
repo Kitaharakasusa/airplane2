@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Custom suite">
+    <!-- name 必须Parameters注解接收名一致，value就是为参数的值-->
+    <parameter name="filename" value="${Filepath}"/>
+    <test verbose="1" name="Selenium_Demo" annotations="JDK">
+        <classes>
+            <!-- 设置需要执行的class路径名-->
+            <class name="hyg.test.test4"/>
+        </classes>
+    </test>
+</suite>
