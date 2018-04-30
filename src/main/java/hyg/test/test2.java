@@ -1,16 +1,8 @@
 package hyg.test;
 
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 import hyg.model.Check;
 import hyg.model.CusTicker;
